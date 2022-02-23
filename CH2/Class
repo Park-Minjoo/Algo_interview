@@ -44,3 +44,18 @@ Rectangle rect = new Rectangle(3,4);
 System.out.println(rect.area());
 
 // 자바는 모든 것이 클래스 !
+
+#Python
+from dataclasses import dataclass
+
+@dataclass
+class Rectangle:
+    width: int
+    height: int
+    def area(self):
+        return self.width * self.height
+
+rect = Rectangle(3,4)
+println(rect.area())
+
+// dataclass decoration
