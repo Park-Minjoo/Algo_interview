@@ -1,0 +1,17 @@
+#C
+//배열; 순차적으로 메모리 할당
+//구조체; 메모리의 어느 영역에나 어떤 크기로든 할당할 수 있음. 사실상 유일한 복합 자료형
+//ADT; 구조체를 한 번 이상 사용
+
+#C++
+// 클래스 등장, but 구조체 여전히 쓰이고 있음.
+// C with classes
+
+struct Product {
+    int weight;
+    double prices;
+};
+
+Product apple;
+apple.price = 10;
+
