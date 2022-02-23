@@ -19,3 +19,9 @@ for (String f : foo) {
 foo = ['A', 'B', 'C']
 for f in foo:
     print(f)
+
+#Go
+var foo = []string{"A", "B", "C"}
+for _, f := rango foo {
+    fmt.Println(f)
+}
