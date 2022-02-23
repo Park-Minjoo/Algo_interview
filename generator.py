@@ -22,12 +22,14 @@ def generator():
     yield 1
     yield 'string'
     yield True
-# >>> g = generator()
-# >>> g
+
+
+g = generator()
+g
 # <generator object generator at 0x10z47c678>
-# >>> next(g)
+next(g)
 # 1
-# >>> next(g)
+next(g)
 # 'string'
-# >>> next(g)
+next(g)
 # True
