@@ -82,3 +82,23 @@ fmt.Println(rect.area())
 // area() 함수 --> polymorphism 다형성 지원
 // 다형성; 서로 다른 유형의 개체에 단일 인터페이스 제공.
 // Geometry 라는 단일 인터페이스는 어떤 유형이냐에 따라 다양한 방법으로 구현
+
+#TypeScript
+class Rectangle {
+    width: number;
+    height: number;
+
+    constructor(width: number, height: number) {
+        this.width = width;
+        this.height = height;
+    }
+
+    area(): number {
+        return this.width * this.height;
+    }
+}
+
+const rect = new Rectangle(3,4);
+console.log(rect.area());
+
+//현존하는 가장 우아한 언어
