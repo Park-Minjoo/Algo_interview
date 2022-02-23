@@ -1,0 +1,11 @@
+#C++
+std:: string foo[] = {"A", "B", "C"};
+for (std::string f : foo) {
+    std::cout << f << std::endl;
+}
+
+// after version 11 -> modern C++
+// : support
+
+#JAVA
+
