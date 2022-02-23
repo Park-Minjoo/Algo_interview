@@ -15,3 +15,43 @@ struct Product {
 Product apple;
 apple.price = 10;
 
+#JAVA
+class Product {
+    private int weight;
+    private double price;
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
+
+Product apple = new Product();
+apple.setPrice(10);
+
+// 자바는 더 이상 구조체를 지원하지 않음.
+// 클래스만 !
+
+# Python
+from collections import namedtuple
+MyStruct = namedtuple("MyStruct", "field1 field2 field3")
+
+m = MyStruct("foo", "bar", "baz")
+
+// 구조체, 클래스 없음 -> namedtuple 사용
+// python3.7 부터 dataclass 지원.
+// @dataclass Decoration; 타입 힌트와 함께 활용
+
+# Python 3.7+
+from dataclasses import dataclass
+
+@dataclass
+class Product:
+    weight: int = None
+    price: float = None
+
+apple = Product()
+apple.price = 10
+
+//초기화 함수 지원
+//출력할 때 읽기 쉬운 포맷으로 출력
+//3.6 이전 -> Backport 버전. 'pip install dataclasses'
