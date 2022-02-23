@@ -1,0 +1,46 @@
+#C++
+//선언
+class Rectangle {
+    int width, height;
+public:
+    Rectangle(int, int);
+
+    int area();
+};
+
+//구현
+Rectangle::Rectangle(int x, int y) {
+    width = x;
+    height = y;
+}
+
+int Rectangle::area() {
+    return width * height;
+}
+
+Rectangle rect(3,4);
+std::cout << rect.area() << std::endl;
+
+//선언부와 구현부
+//헤더 파일과 소스 파일
+//컴파일 속도 빨라짐.
+
+#JAVA
+class Rectangle {
+    int width;
+    int height;
+
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public int area() {
+        return this.width * this.height;
+    }
+}
+
+Rectangle rect = new Rectangle(3,4);
+System.out.println(rect.area());
+
+// 자바는 모든 것이 클래스 !
