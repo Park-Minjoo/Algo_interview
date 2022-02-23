@@ -55,3 +55,24 @@ apple.price = 10
 //초기화 함수 지원
 //출력할 때 읽기 쉬운 포맷으로 출력
 //3.6 이전 -> Backport 버전. 'pip install dataclasses'
+
+#Go
+type Product struct {
+    weight int
+    price float64
+}
+
+var apple Product
+apple.price = 10
+
+// 구조체 지원
+// C와 유사한데, type 추가
+
+#TypeScript
+interface Product {
+    weight: number,
+    price: number,
+}
+
+let apple = {} as Product;
+apple.price = 10;
