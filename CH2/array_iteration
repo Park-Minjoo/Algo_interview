@@ -25,3 +25,9 @@ var foo = []string{"A", "B", "C"}
 for _, f := rango foo {
     fmt.Println(f)
 }
+
+#TypeScript
+let foo:string[] = ['A', 'B', 'C'];
+for (const f of foo) {
+    console.log(f);
+}
