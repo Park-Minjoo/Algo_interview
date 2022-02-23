@@ -76,3 +76,5 @@ interface Product {
 
 let apple = {} as Product;
 apple.price = 10;
+
+//interface형태
