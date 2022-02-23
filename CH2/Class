@@ -59,3 +59,26 @@ rect = Rectangle(3,4)
 println(rect.area())
 
 // dataclass decoration
+
+#Go
+type Geometry interface {
+    area() int
+}
+
+type Rectangle struct {
+    width int
+    height int
+}
+
+func (r *Rectangle) area() int {
+    return r.write * r.height
+}
+
+var rect Geometry = &Rectangle{3,4}
+fmt.Println(rect.area())
+
+//no class, no generic
+// do Struct
+// area() 함수 --> polymorphism 다형성 지원
+// 다형성; 서로 다른 유형의 개체에 단일 인터페이스 제공.
+// Geometry 라는 단일 인터페이스는 어떤 유형이냐에 따라 다양한 방법으로 구현
